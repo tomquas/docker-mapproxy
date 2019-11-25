@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3
 # MAINTAINER Arne Schubert<atd.schubert@gmail.com>
 
 ENV MAPPROXY_VERSION 1.12.0
@@ -8,9 +8,9 @@ ENV MAPPROXY_THREADS 2
 RUN set -x \
   && apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
-    python-imaging \
+    python-pil \
     python-yaml \
-    libproj12 \
+    libproj13 \
     libgeos-dev \
     python-lxml \
     libgdal-dev \
