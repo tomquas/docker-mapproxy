@@ -1,7 +1,7 @@
-FROM python:3.5
-MAINTAINER Arne Schubert<atd.schubert@gmail.com>
+FROM python:3-alpine
+# MAINTAINER Arne Schubert<atd.schubert@gmail.com>
 
-ENV MAPPROXY_VERSION 1.11.0
+ENV MAPPROXY_VERSION 1.12.0
 ENV MAPPROXY_PROCESSES 4
 ENV MAPPROXY_THREADS 2
 
